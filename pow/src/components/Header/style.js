@@ -1,0 +1,106 @@
+import styled from 'styled-components';
+
+export const header = styled.div`
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 217px;
+    background-color: white;
+    border-bottom: 0.12em solid #5348B2;
+    display: flex;
+    justify-content: center;
+`
+
+export const center = styled.div`
+    width: 1280px;
+    height: 217px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+`
+
+export const area = styled.div`
+    margin-top: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+`
+
+export const powLogo = styled.div`
+    width: 142px;
+    height: 51.18px;
+    text-align: center;
+    span {
+        font-size: 12px;
+        color: #8D8D8D;
+    }
+`
+
+export const searching = styled.div`
+    input {
+        width: 522px;
+        height: 35px;
+        font-size: 15px;
+        border-radius: 3em;
+        border: 0.12px solid #5345B2;
+        padding: 15px;
+    }
+`
+
+export const login = styled.div`
+    input {
+        width: 142px;
+        height: 60px;
+        background-color: #F1A882;
+        color: white;
+        border-radius: 2.5em;
+        border: none;
+        font-size: 20px;
+    }
+`
+// export const nav = styled.div`
+//     flex-direction: column;
+//     justify-content: space-between;
+// `
+
+export const kindCenter = styled.div`
+    width: 119px;
+    heigh: 19px;
+`
+
+export const kind = styled.div`
+    width: 367px;
+    height: 79px;
+    display: flex;
+`
+export const select = styled.div`
+    width: 113px;
+    height: 71px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    span {
+        font-size: 25px;
+        color: #8D8D8D;
+    }
+    div {
+        width: 113px;
+        height: 16px;
+        background-color: #F1A882;
+        border-radius: 3em;
+    }
+`
+
+export const state = styled.div`
+    span {
+        position: relative;
+        left: 30px;
+        color: #8D8D8D;
+        margin-bottom: 30px;
+    }
+`
