@@ -3,8 +3,8 @@ import * as s from './style';
 
 const Main = () => {
     return(
-        <s.center>
-            <s.main>
+        <s.main>
+            <s.center>
                 <s.line>
                     <s.club/>
                     <s.club/>
@@ -17,8 +17,8 @@ const Main = () => {
                     <s.club/>
                     <s.club/>
                 </s.line>
-            </s.main>
-        </s.center>
+            </s.center>
+        </s.main>
     )
 }
 
