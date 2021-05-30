@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const header = styled.div`
+export const Header = styled.div`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +13,7 @@ export const header = styled.div`
     justify-content: center;
 `
 
-export const center = styled.div`
+export const Center = styled.div`
     width: 1280px;
     height: 217px;
     display: flex;
@@ -22,14 +22,14 @@ export const center = styled.div`
     
 `
 
-export const area = styled.div`
+export const Area = styled.div`
     margin-top: 37px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 `
 
-export const powLogo = styled.div`
+export const PowLogo = styled.div`
     width: 142px;
     height: 51.18px;
     text-align: center;
@@ -39,7 +39,7 @@ export const powLogo = styled.div`
     }
 `
 
-export const searching = styled.div`
+export const Searching = styled.div`
     input {
         width: 522px;
         height: 35px;
@@ -50,7 +50,7 @@ export const searching = styled.div`
     }
 `
 
-export const login = styled.div`
+export const Login = styled.div`
     input {
         width: 142px;
         height: 60px;
@@ -61,22 +61,18 @@ export const login = styled.div`
         font-size: 20px;
     }
 `
-// export const nav = styled.div`
-//     flex-direction: column;
-//     justify-content: space-between;
-// `
 
-export const kindCenter = styled.div`
+export const KindCenter = styled.div`
     width: 119px;
     heigh: 19px;
 `
 
-export const kind = styled.div`
+export const Kind = styled.div`
     width: 367px;
     height: 79px;
     display: flex;
 `
-export const select = styled.div`
+export const Select = styled.div`
     width: 113px;
     height: 71px;
     margin: auto;
@@ -96,11 +92,9 @@ export const select = styled.div`
     }
 `
 
-export const state = styled.div`
+export const State = styled.div`
     span {
-        position: relative;
         left: 30px;
         color: #8D8D8D;
-        margin-bottom: 30px;
     }
 `

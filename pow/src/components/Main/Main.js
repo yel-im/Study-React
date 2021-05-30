@@ -3,22 +3,22 @@ import * as s from './style';
 
 const Main = () => {
     return(
-        <s.main>
-            <s.center>
-                <s.line>
-                    <s.club/>
-                    <s.club/>
-                    <s.club/>
-                    <s.club/>
-                </s.line>
-                <s.line>
-                    <s.club/>
-                    <s.club/>
-                    <s.club/>
-                    <s.club/>
-                </s.line>
-            </s.center>
-        </s.main>
+        <s.Main>
+            <s.Center>
+                <s.Line>
+                    <s.Club/>
+                    <s.Club/>
+                    <s.Club/>
+                    <s.Club/>
+                </s.Line>
+                <s.Line>
+                    <s.Club/>
+                    <s.Club/>
+                    <s.Club/>
+                    <s.Club/>
+                </s.Line>
+            </s.Center>
+        </s.Main>
     )
 }
 

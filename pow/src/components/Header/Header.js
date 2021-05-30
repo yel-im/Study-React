@@ -5,42 +5,42 @@ import search from '../Img/search.png';
 
 const Header = () => {
     return(
-        <s.header>
-            <s.center>
-                <s.area>
-                    <s.powLogo>
+        <s.Header>
+            <s.Center>
+                <s.Area>
+                    <s.PowLogo>
                         <img src={pow}></img>
                         <span>Project Once Writing</span>
-                    </s.powLogo>
-                    <s.searching>
+                    </s.PowLogo>
+                    <s.Searching>
                         <input placeholder="검색어를 입력해주세요"></input>
-                    </s.searching>
-                    <s.login>
+                    </s.Searching>
+                    <s.Login>
                         <input type="button" value="Login"></input>
-                    </s.login>
-                </s.area>
-                <s.area>
-                    <s.kindCenter></s.kindCenter>
-                    <s.kind>
-                        <s.select>
+                    </s.Login>
+                </s.Area>
+                <s.Area>
+                    <s.KindCenter></s.KindCenter>
+                    <s.Kind>
+                        <s.Select>
                             <span>전공</span>
                             <div/>
-                        </s.select>
-                        <s.select>
+                        </s.Select>
+                        <s.Select>
                             <span>창체</span>
                             <div/>
-                        </s.select>
-                        <s.select>
+                        </s.Select>
+                        <s.Select>
                             <span>자율</span>
                             <div/>
-                        </s.select>
-                    </s.kind>
-                    <s.state>
+                        </s.Select>
+                    </s.Kind>
+                    <s.State>
                         <span>로그인을 해주세요!</span>
-                    </s.state>
-                </s.area>
-            </s.center>
-        </s.header>
+                    </s.State>
+                </s.Area>
+            </s.Center>
+        </s.Header>
     );
 }
 

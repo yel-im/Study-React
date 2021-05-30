@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const main = styled.div`
+export const Main = styled.div`
     margin: 0;
     padding-top: 16.692em;
     width: 100%;
@@ -10,7 +10,7 @@ export const main = styled.div`
     justify-content: center;
 `
 
-export const center = styled.div`
+export const Center = styled.div`
     width: 1150px;
     height: 100%;
     display: flex;
@@ -19,7 +19,7 @@ export const center = styled.div`
     
 `
 
-export const line = styled.div`
+export const Line = styled.div`
     width: 100%;
     height: 299px;
     display: flex;
@@ -27,7 +27,7 @@ export const line = styled.div`
     margin-top: 3em;
 `
 
-export const club = styled.div`
+export const Club = styled.div`
     width: 227px;
     height: 227px;
     border-radius: 50%;
