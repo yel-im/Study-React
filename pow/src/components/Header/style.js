@@ -63,7 +63,7 @@ export const Login = styled.div`
 `
 
 export const KindCenter = styled.div`
-    width: 230px;
+    width: 220px;
 `
 
 export const Kind = styled.div`
@@ -92,10 +92,11 @@ export const Select = styled.div`
 `
 
 export const State = styled.div`
-    width: 230px;
+    width: 220px;
     display: flex;
     justify-content: flex-end;
     span {
+        padding-bottom: 15px;
         left: 0;
         color: #8D8D8D;
     }
