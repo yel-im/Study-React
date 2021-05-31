@@ -13,6 +13,7 @@ export const Main = styled.div`
 export const Center = styled.div`
     width: 1150px;
     height: 100%;
+    background-color: white;s
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,6 +25,7 @@ export const Line = styled.div`
     height: 299px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
     margin-top: 3em;
 `
 
@@ -32,4 +34,9 @@ export const Club = styled.div`
     height: 227px;
     border-radius: 50%;
     border: 0.1em solid #707070;
+    img {
+        width: 227px;
+        height: 227px;
+        border-radius: 50%;
+    }
 `
