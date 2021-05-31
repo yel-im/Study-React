@@ -63,8 +63,7 @@ export const Login = styled.div`
 `
 
 export const KindCenter = styled.div`
-    width: 119px;
-    heigh: 19px;
+    width: 230px;
 `
 
 export const Kind = styled.div`
@@ -93,8 +92,11 @@ export const Select = styled.div`
 `
 
 export const State = styled.div`
+    width: 230px;
+    display: flex;
+    justify-content: flex-end;
     span {
-        left: 30px;
+        left: 0;
         color: #8D8D8D;
     }
 `
