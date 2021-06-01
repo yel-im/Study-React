@@ -2,8 +2,30 @@ import React, { Component } from 'react';
 import * as s from './style';
 import pow from '../Img/pow.png';
 import search from '../Img/search.png';
+import Login from '../Modal/Login';
+
+import Modal from 'react-awesome-modal';
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            visible : false
+        }
+    }
+
+    popModal = function() {
+        this.setState({
+            visible : true
+        });
+    }
+    
+    closeModal = function() {
+        this.setState({
+            visible : false
+        });
+    }
+    
     render() {
         return(
             <s.Header>
@@ -17,7 +39,10 @@ class Header extends Component {
                             <input placeholder="검색어를 입력해주세요"></input>
                         </s.Searching>
                         <s.Login>
-                            <input type="button" value="Login"></input>
+                            <input type="button" value="Login" onClick={() => this.popModal()}></input>
+                            <Modal visible={this.state.visible} effect="fadeInDown" onClickAway={() => this.closeModal()}>
+                                <Login></Login>
+                            </Modal>
                         </s.Login>
                     </s.Area>
                     <s.Area>
@@ -45,5 +70,18 @@ class Header extends Component {
         );
     }
 }
+
+
+// popModal = function() {
+//     this.setState({
+//         visible : true
+//     });
+// }
+
+// closeModal = function() {
+//     this.setState({
+//         visible : false
+//     });
+// }
 
 export default Header;

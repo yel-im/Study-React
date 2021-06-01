@@ -6,16 +6,16 @@ export const Header = styled.div`
     box-sizing: border-box;
     position: fixed;
     width: 100%;
-    height: 217px;
+    height: 200px;
     background-color: white;
-    border-bottom: 0.12em solid #5348B2;
+    border-bottom: 1px solid #5348B2;
     display: flex;
     justify-content: center;
 `
 
 export const Center = styled.div`
     width: 1280px;
-    height: 217px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,7 +23,7 @@ export const Center = styled.div`
 `
 
 export const Area = styled.div`
-    margin-top: 37px;
+    margin-top: 28.5px;
     display: flex;
     align-items: center;
     justify-content: space-around;
