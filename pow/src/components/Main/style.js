@@ -13,7 +13,7 @@ export const Main = styled.div`
 export const Center = styled.div`
     width: 1150px;
     height: 100%;
-    background-color: white;s
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

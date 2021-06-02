@@ -50,8 +50,8 @@ export const Searching = styled.div`
     }
 `
 
-export const Login = styled.div`
-    input {
+export const LoginArea = styled.div`
+    button {
         width: 142px;
         height: 60px;
         background-color: #F1A882;
