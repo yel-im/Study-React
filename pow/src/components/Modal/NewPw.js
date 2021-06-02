@@ -7,12 +7,12 @@ class NewPw extends Component {
         return(
             <s.ModalCenter>
                 <s.PwModal>
-                    <div></div>
                     <s.Logo>
                         <img src={pow} alt=""></img>
                     </s.Logo>
                     <s.PwSpan>
-                        비밀번호 변경
+                        <span>로그인으로 돌아가기</span><br/>
+                        <span>비밀번호 변경</span>
                     </s.PwSpan>
                     <s.PwInput>
                         <input className="ModalInput" placeholder="현재 비밀번호를 입력해주세요"></input>

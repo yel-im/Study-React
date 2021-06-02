@@ -29,7 +29,7 @@ export const ModalCenter = styled.div`
 `
 
 export const Logo = styled.div`
-    height: 122px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,16 +94,18 @@ export const PwModal = styled.div`
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     background-color: white;
     div {
-        height: 29px;
+        font-size: 15px;
     }
 `
 
-export const PwSpan = styled.div`
+export const PwSpan = styled.span`
     height: 17px;
+    text-align: center;
+    color: #707070;
 `
 
 export const PwInput = styled.div`
@@ -111,6 +113,7 @@ export const PwInput = styled.div`
     width: 452px;
     display: flex;
     align-items: center;
+    justify-content: center;
 `
 
 export const NewPwInput = styled.div`
@@ -119,6 +122,7 @@ export const NewPwInput = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
 `
 
 export const EnterBtn = styled.div`
