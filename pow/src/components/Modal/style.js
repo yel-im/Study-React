@@ -5,7 +5,11 @@ export const ModalCenter = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    z-index: 10;
+    button {
+        :hover {
+        cursor: pointer;}
+    }
     .ModalInput {
         box-sizing: border-box;
         padding: 5px 15px 5px 15px;
@@ -52,6 +56,7 @@ export const LoginModal = styled.div`
     border: 1px solid #707070;
     padding: 10px 20px;
     background-color: white;
+    z-index: 1;
 `
 
 export const Etc = styled.span`
@@ -82,6 +87,9 @@ export const Change = styled.div`
     color: #707070;
     font-size: 10px;
     padding-bottom: 5px;
+    :hover {
+        cursor: pointer;
+    }
 
 `
 

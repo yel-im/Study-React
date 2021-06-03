@@ -11,6 +11,10 @@ export const Header = styled.div`
     border-bottom: 1px solid #5348B2;
     display: flex;
     justify-content: center;
+    button {
+        :hover {
+        cursor: pointer;}
+    }
 `
 
 export const Center = styled.div`

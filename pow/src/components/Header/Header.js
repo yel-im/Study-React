@@ -1,32 +1,19 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import * as s from './style';
 import pow from '../Img/pow.png';
 // import search from '../Img/search.png';
 import Login from '../Modal/Login';
-import Modal from 'react-awesome-modal';
 
-class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            visible : false
-        }
+const Header = () => {
+    const [loginModal, setLoginModal] = useState(false);
+
+    const onClickLogin = () => {
+        setLoginModal(true);
     }
 
-    popModal = function() {
-        this.setState({
-            visible : true
-        });
-    }
-    
-    closeModal = function() {
-        this.setState({
-            visible : false
-        });
-    }
-    
-    render() {
-        return(
+    return(
+        <>
+            {loginModal && <Login></Login>}
             <s.Header>
                 <s.Center>
                     <s.Area>
@@ -38,10 +25,7 @@ class Header extends Component {
                             <input placeholder="검색어를 입력해주세요"></input>
                         </s.Searching>
                         <s.LoginArea>
-                            <button onClick={() => this.popModal()}>LOGIN</button>
-                            <Modal visible={this.state.visible} effect="fadeInDown" onClickAway={() => this.closeModal()}>
-                                <Login></Login>
-                            </Modal>
+                            <button onClick={onClickLogin}>LOGIN</button>
                         </s.LoginArea>
                     </s.Area>
                     <s.Area>
@@ -66,8 +50,9 @@ class Header extends Component {
                     </s.Area>
                 </s.Center>
             </s.Header>
-        );
-    }
+        </>
+        
+    );
 }
 
 export default Header;
