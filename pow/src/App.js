@@ -14,9 +14,6 @@ const App = () => {
           <Header></Header>
           <Main></Main>
         </Route>
-        <Route path="/del" exact>
-          <AccountDel></AccountDel>
-        </Route>
       </BrowserRouter>
     </>
   )
