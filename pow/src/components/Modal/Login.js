@@ -3,6 +3,10 @@ import * as s from './style';
 import pow from './Img/pow.png';
 
 const Login = ({setLoginModal, setAccountDelModal, setNewPwModal}) => {
+    const onClickAway = () => {
+        setLoginModal(false);
+    };
+    
     const onClickNewPw = () => {
         setLoginModal(false);
         setNewPwModal(true);
@@ -15,10 +19,12 @@ const Login = ({setLoginModal, setAccountDelModal, setNewPwModal}) => {
 
     return(
         <>
-            <s.Modal></s.Modal>
+            <s.Modal onClick={onClickAway}></s.Modal>
             <s.ModalCenter>
                 <s.LoginModal>
-                    <s.Etc onClick={onClickAccountDel}>...</s.Etc>
+                    <s.Etc>
+                        <span onClick={onClickAccountDel}>...</span>
+                    </s.Etc>
                     <s.Logo>
                         <img src={pow} alt=""/>
                         <span>로그인하기</span>

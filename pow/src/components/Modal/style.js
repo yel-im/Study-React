@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Modal = styled.div`
-    /* width: 100%;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
     background-color: #B9B9B9;
     opacity: 0.5;
-    z-index: 2; */
+    z-index: 1;
 `
 
 export const ModalCenter = styled.div`
@@ -20,7 +21,7 @@ export const ModalCenter = styled.div`
     }
     .ModalInput {
         box-sizing: border-box;
-        padding: 5px 15px 5px 15px;
+        padding: 5px 15px 5px 20px;
         width: 354px;
         height: 59px;
         border-radius: 30em;
@@ -68,9 +69,12 @@ export const LoginModal = styled.div`
 `
 
 export const Etc = styled.span`
-    font-size: 30px;
     display: flex;
     justify-content: flex-end;
+    span {
+        font-size: 30px;
+        cursor: pointer;
+    }
 `
 
 export const LoginInput = styled.div`
@@ -134,7 +138,7 @@ export const PwInput = styled.div`
 
 export const NewPwInput = styled.div`
     width: 452px;
-    height: 131px;
+    height: 125px;
     display: flex;
     align-items: center;
     flex-direction: column;
