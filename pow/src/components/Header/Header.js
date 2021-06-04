@@ -3,9 +3,13 @@ import * as s from './style';
 import pow from '../Img/pow.png';
 // import search from '../Img/search.png';
 import Login from '../Modal/Login';
+import AccountDel from '../Modal/AccountDel';
+import NewPw from '../Modal/NewPw';
 
 const Header = () => {
     const [loginModal, setLoginModal] = useState(false);
+    const [AccountDelModal, setAccountDelModal] = useState(false);
+    const [NewPwModal, setNewPwModal] = useState(false);
 
     const onClickLogin = () => {
         setLoginModal(true);
@@ -13,7 +17,20 @@ const Header = () => {
 
     return(
         <>
-            {loginModal && <Login></Login>}
+            {loginModal && (
+                <Login
+                    setLoginModal={setLoginModal}
+                    setAccountDelModal={setAccountDelModal}
+                    setNewPwModal={setNewPwModal}
+                ></Login>
+            )}
+            {AccountDelModal && (
+                <AccountDel setAccountDelModal={setAccountDelModal}></AccountDel>
+            )}
+            {NewPwModal && (
+                <NewPw setNewPwModal={setNewPwModal}></NewPw>
+            )}
+
             <s.Header>
                 <s.Center>
                     <s.Area>

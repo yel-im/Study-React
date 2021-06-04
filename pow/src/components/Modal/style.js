@@ -1,4 +1,3 @@
-import style from 'react-awesome-modal/lib/style';
 import styled from 'styled-components';
 
 export const ModalCenter = styled.div`
@@ -6,7 +5,7 @@ export const ModalCenter = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 3;
     button {
         :hover {
         cursor: pointer;}
@@ -57,11 +56,10 @@ export const LoginModal = styled.div`
     border: 1px solid #707070;
     padding: 10px 20px;
     background-color: white;
-    z-index: 2;
+    z-index: 5;
 `
 
 export const Etc = styled.span`
-    width: 452px;
     font-size: 30px;
     display: flex;
     justify-content: flex-end;
@@ -106,6 +104,7 @@ export const PwModal = styled.div`
     justify-content: space-between;
     flex-direction: column;
     background-color: white;
+    z-index: 5;
     div {
         font-size: 15px;
     }
@@ -151,6 +150,7 @@ export const DelModal = styled.div`
     align-items: center;
     flex-direction: column;
     background-color: white;
+    z-index: 5;
     .accountCheck{
         font-size: 16px;
         color: #8D8D8D;
