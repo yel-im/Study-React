@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+  
 export const Main = styled.div`
     margin: 0;
     padding-top: 16.692em;
