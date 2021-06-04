@@ -1,11 +1,19 @@
 import styled from 'styled-components';
 
+export const Modal = styled.div`
+    /* width: 100%;
+    height: 500px;
+    background-color: #B9B9B9;
+    opacity: 0.5;
+    z-index: 2; */
+`
+
 export const ModalCenter = styled.div`
     position: fixed;
+    z-index: 3;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
     button {
         :hover {
         cursor: pointer;}
