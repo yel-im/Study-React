@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Header from "./components/Header/Header";
 import Main from './components/Main/Main';
-import NewPw from './components/Modal/NewPw';
+import AccountDel from './components/Modal/AccountDel';
 import { Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 
@@ -20,8 +20,8 @@ class App extends Component {
           <Header></Header>
           <Main></Main>
         </Route>
-        <Route path="/pw" exact>
-          <NewPw></NewPw>
+        <Route path="/del" exact>
+          <AccountDel></AccountDel>
         </Route>
       </BrowserRouter>
     </>
