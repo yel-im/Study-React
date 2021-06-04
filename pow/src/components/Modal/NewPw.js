@@ -11,7 +11,6 @@ class NewPw extends Component {
                         <img src={pow} alt=""></img>
                     </s.Logo>
                     <s.PwSpan>
-                        <span>로그인으로 돌아가기</span><br/>
                         <span>비밀번호 변경</span>
                     </s.PwSpan>
                     <s.PwInput>
