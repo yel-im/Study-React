@@ -1,20 +1,14 @@
 /* eslint-disable */
-import React, { Component } from 'react';
+import React from 'react';
 import Header from "./components/Header/Header";
 import Main from './components/Main/Main';
 import AccountDel from './components/Modal/AccountDel';
 import { Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 
-class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-    }
-  }
-  render() {
-    return(
-      <>
+const App = () => {
+  return(
+    <>
       <BrowserRouter>
         <Route path="/" exact>
           <Header></Header>
@@ -25,8 +19,7 @@ class App extends Component {
         </Route>
       </BrowserRouter>
     </>
-    )
-  }
+  )
 }
 
 export default App;
