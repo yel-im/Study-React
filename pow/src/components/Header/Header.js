@@ -45,7 +45,7 @@ const Header = () => {
                             </s.Select>
                         </s.Kind>
                         <s.State>
-                            <span>로그인을 해주세요!</span>
+                            <h4>로그인을 해주세요!</h4>
                         </s.State>
                     </s.Area>
                 </s.Center>

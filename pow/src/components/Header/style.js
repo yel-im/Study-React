@@ -99,7 +99,7 @@ export const State = styled.div`
     width: 220px;
     display: flex;
     justify-content: flex-end;
-    span {
+    h4 {
         padding-bottom: 15px;
         left: 0;
         color: #8D8D8D;
