@@ -1,3 +1,4 @@
+import style from 'react-awesome-modal/lib/style';
 import styled from 'styled-components';
 
 export const ModalCenter = styled.div`
@@ -5,7 +6,7 @@ export const ModalCenter = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
+    z-index: 1;
     button {
         :hover {
         cursor: pointer;}
@@ -56,7 +57,7 @@ export const LoginModal = styled.div`
     border: 1px solid #707070;
     padding: 10px 20px;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
 `
 
 export const Etc = styled.span`
@@ -137,4 +138,43 @@ export const EnterBtn = styled.div`
     height: 120px;
     display: flex;
     align-items: center;
+`
+
+//account Delete Modal
+export const DelModal = styled.div`
+    width: 460px;
+    height: 400px;
+    box-sizing: border-box;
+    border: 1px solid #707070;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    .accountCheck{
+        font-size: 16px;
+        color: #8D8D8D;
+    }
+`
+
+export const DelBtn = styled.div`
+    width: 250px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button {
+        width: 95px;
+        height: 59px;
+        color: white;
+        font-size: 15px;
+        border: none;
+        border-radius: 1em;
+    }
+    .agree {
+        background-color: #F4BEA1;
+    }
+    .cancel {
+        background-color: #BACFF3;
+    }
 `
